@@ -1,16 +1,13 @@
 <?php
+	$url = '';
 
-	$url = ''; // Copy and paste the URL of your Discord Webhook here in the format https://discordapp.com/api/webhooks/123/abc
-  
-	// Add, remove and edit the embedded features you want - https://discordapp.com/developers/docs/resources/channel#embed-object
-	$embeds = array([    
-		'type' => 'rich', // Don't change this
+	$embeds = array([
+		'type' => 'rich',
 		'title' => 'Title',
 		'description' => 'Description.',
-		'url' => 'http://www..com/'
+		'color' => 2522356
 	]);
-  
-	$data = array('embeds' => $embeds); // If you don't want to use embeds, try 'contents' => 'Simple message' instead
+	$data = array('embeds' => $embeds);
 	$curl = curl_init($url);
 	curl_setopt($curl, CURLOPT_CUSTOMREQUEST,'POST');
 	curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
