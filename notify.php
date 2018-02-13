@@ -1,5 +1,5 @@
 <?php
-	$url = '';
+	$url = ''; // The URL of your webhook - https://discordapp.com/api/webhooks/123/abc123
 
 	$embeds = array([
 		'type' => 'rich',
