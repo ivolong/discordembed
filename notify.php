@@ -5,7 +5,7 @@
 		'type' => 'rich',
 		'title' => 'Title',
 		'description' => 'Description.',
-		'color' => 2522356
+		'color' => 0xFFFFFF
 	]);
 	$data = array('embeds' => $embeds);
 	$curl = curl_init($url);
