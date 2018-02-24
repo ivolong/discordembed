@@ -12,6 +12,6 @@
 	curl_setopt($curl, CURLOPT_CUSTOMREQUEST,'POST');
 	curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-	curl_exec($curl);
+	echo curl_exec($curl);
   
 ?>
