@@ -5,15 +5,13 @@
     $text = 'This embed was sent with PHP.'; // Standard message content, not part of the embed.
     
     $webhook = 'https://discordapp.com/api/webhooks/'; // Your webhook URL.
-    $title = 'Discord Embed';
-    $description = 'A script for posting embeds to Discord webhooks.';
     
     // Function.
 
     $embeds = array([
         'type' => 'rich',
-        'title' => $title,
-        'description' => $description,
+        'title' => 'Discord Embed',
+        'description' => 'A script for posting embeds to Discord webhooks.',
         'fields' => array(
             [
                 'name' => 'Language',
