@@ -46,7 +46,7 @@
     $curl = curl_init($webhook);
     curl_setopt($curl, CURLOPT_CUSTOMREQUEST,'POST');
     curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($data));
-    echo curl_setopt($curl, CURLOPT_RETURNTRANSFER, true); // Post to the webhook and return any errors.
-    curl_exec($curl);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    echo curl_exec($curl); // Post to the webhook and return any errors.
     
 ?>
