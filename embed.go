@@ -3,7 +3,7 @@
 package main
 
 import (
-	"fmt"
+	"log"
 	"net/http"
 	"bytes"
 )
@@ -43,7 +43,7 @@ func main () {
 			}
 		]
 	}`)
-	post, error := http.NewRequest("POST", "https://discordapp.com/api/webhooks/", bytes.NewBuffer(jsonString))
+	post, error := http.NewRequest("POST", "https://discordapp.com/api/webhooks/", bytes.NewBuffer(data))
 	post.Header.Set("Content-type", "application/json")
 
 	client := &http.Client{}
